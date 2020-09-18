@@ -8,14 +8,13 @@ h1{
     display:flex;
     justify-content: center;
     align-items:center;
-    height: 100vh;
     width: 100%;
     margin-top: 5em;
 }
 
 .calc-wrap{
-    width:500px;
-    height:700px;
+    width:600px;
+    height:800px;
 }
 
 .row{
