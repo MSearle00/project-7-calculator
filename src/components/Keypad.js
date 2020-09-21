@@ -7,10 +7,10 @@ render() {
     return (
 <div classsName ="button">
           <div className="row">
-            <button class="operator" name="m+" >m+</button>
-            <button class="operator" name="m-" >m-</button>
-            <button class="operator" name="MC" >MC</button>
-            <button class="operator" name="MR" >MR</button>
+            <button class="operator" name="m+" onClick={e => this.props.onClick(e.target.name)}>m+</button>
+            <button class="operator" name="m-" onClick={e => this.props.onClick(e.target.name)} >m-</button>
+            <button class="operator" name="MC" onClick={e => this.props.onClick(e.target.name)}>MC</button>
+            <button class="operator" name="MR" onClick={e => this.props.onClick(e.target.name)}>MR</button>
           </div>
           <div className="row">
             <button class="operator" name="(" onClick={e => this.props.onClick(e.target.name)}>(</button>

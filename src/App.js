@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import './App.css';
 import Keypad from './components/Keypad.js';
 import Result from './components/Result.js';
+import Memory from './components/Memory.js';
 
 class App extends Component {
   constructor(){
       super();
 
       this.state = {
-          result: ""
+          result: "",
+          memory: []
       }
   }
 
@@ -23,6 +25,29 @@ class App extends Component {
       }
       else if(button === "CE"){
           this.backspace()
+      }
+      
+      else if(button === "m+"){
+          this.state.memory = (Number(this.state.memory) + Number(this.state.result));
+          this.calculate();
+          this.reset();
+      }
+      
+      else if(button === "m-"){
+          this.state.memory = (Number(this.state.memory) - Number(this.state.result));
+          this.calculate();
+          this.reset()
+      }
+
+      else if(button === "MC"){
+          this.state.memory = "";
+          this.calculate();
+          this.reset();
+      }
+
+      else if(button === "MR"){
+          this.state.result = Number(this.state.memory);
+          
       }
 
       else {
@@ -75,6 +100,7 @@ class App extends Component {
       <div className="calc-wrap">
       <Result result={this.state.result}/>
       <Keypad onClick={this.onClick}/> 
+      <Memory memory={this.state.memory} />
       </div>
     
     </div>
