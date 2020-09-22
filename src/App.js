@@ -28,25 +28,30 @@ class App extends Component {
       }
       
       else if(button === "m+"){
-          this.state.memory = (Number(this.state.memory) + Number(this.state.result));
-          this.calculate();
-          this.reset();
+          this.setState({
+              memory: Number(this.state.memory) + Number(this.state.result)
+          })
+          this.reset()
       }
       
       else if(button === "m-"){
-          this.state.memory = (Number(this.state.memory) - Number(this.state.result));
-          this.calculate();
+          this.setState({
+              memory: Number(this.state.memory) - Number(this.state.result)
+          })
           this.reset()
       }
 
       else if(button === "MC"){
-          this.state.memory = "";
-          this.calculate();
-          this.reset();
+          this.setState({
+              memory: ""
+          })
+          this.reset()
       }
 
       else if(button === "MR"){
-          this.state.result = Number(this.state.memory);
+          this.setState({
+              result: this.state.result + this.state.memory
+          })
           
       }
 
@@ -97,10 +102,12 @@ class App extends Component {
     <>
     <h1>Calculator App</h1>
     <div className="App">
-      <div className="calc-wrap">
-      <Result result={this.state.result}/>
-      <Keypad onClick={this.onClick}/> 
-      <Memory memory={this.state.memory} />
+      <div className="page-wrap">
+            <div className="calc-wrap">
+                <Result result={this.state.result}/>
+                <Keypad onClick={this.onClick}/> 
+            </div>
+        <Memory memory={this.state.memory} />
       </div>
     
     </div>
