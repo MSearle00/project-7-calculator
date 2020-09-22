@@ -12,9 +12,14 @@ h1{
     margin-top: 5em;
 }
 
-.calc-wrap{
+.page-wrap{
     width:600px;
     height:800px;
+}
+
+.calc-wrap{
+    background-color: rgb(116, 116, 116);
+    border-radius: 12px;
 }
 
 .row{
@@ -34,6 +39,7 @@ h1{
     padding-bottom: 0.5em;
     font-weight: bold ;
     overflow: scroll;
+    border-radius: 12px;
 }
 
 .memory{
@@ -43,10 +49,10 @@ h1{
     color: rgb(0, 0, 0);
     justify-content: center;
     align-items: center;
-    outline: 1px solid black;
     font-weight: bold ;
     width:50%;
     margin:auto;
+    border-radius: 12px;
 }
 
 .memoryTitle{

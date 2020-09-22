@@ -6,6 +6,7 @@
     align-items: center;
     background-color: lightgray;
     color: black;
+    border-radius: 12px;
 
 }
 .operator {
@@ -16,4 +17,5 @@
     align-items: center;
     background-color: rgb(45, 194, 174);
     color: white;
+    border-radius: 12px;
 }
