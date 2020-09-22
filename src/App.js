@@ -45,7 +45,6 @@ class App extends Component {
           this.setState({
               memory: ""
           })
-          this.reset()
       }
 
       else if(button === "MR"){
