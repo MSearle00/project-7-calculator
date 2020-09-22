@@ -7,7 +7,7 @@ class Memory extends Component{
         return (
             <div className="memory">
                 <p class="memoryTitle"> Calculator Memory </p>
-                <p>{memory}</p>
+                <p class="memoryValue">{memory}</p>
             </div>
         )
     }
