@@ -1,0 +1,49 @@
+$border-radius: 12px;
+$transition-duration:  0.4s;
+$box-shadow:  -3px 3px black, -2px 2px black, -1px 1px black;
+$box-shadow-active: 0 0 0 1px;
+$margin: 3px;
+$outline: none;
+
+
+.button{
+    display:flex;
+    height:4em;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    color: black;
+    border-radius: $border-radius;
+    transition-duration: $transition-duration;
+    box-shadow: $box-shadow;
+    margin: $margin;
+    outline: $outline;
+}
+.button:hover {
+    background-color: rgb(170, 170, 170);
+}
+.button:active{
+    box-shadow: $box-shadow-active;
+}
+
+.operator {
+    display:flex;
+    height:4em;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(45, 194, 174);
+    color: white;
+    border-radius: $border-radius;
+    transition-duration: $transition-duration;
+    box-shadow: $box-shadow;
+    margin: $margin;
+    outline: $outline;
+}
+.operator:hover{
+    background-color:  rgb(20, 145, 128);
+}
+.operator.active{
+    box-shadow: $box-shadow-active;
+}
