@@ -28,7 +28,7 @@ render() {
             <button class="button" name="4" onClick={e => this.props.onClick(e.target.name)}>4</button>
             <button class="button" name="5" onClick={e => this.props.onClick(e.target.name)}>5</button>
             <button class="button" name="6" onClick={e => this.props.onClick(e.target.name)}>6</button>
-            <button class="operator" name="-" onClick={e => this.props.onClick(e.target.name)}>-</button>
+            <button class="operator" name="/" onClick={e => this.props.onClick(e.target.name)}>÷</button>
           </div>
           <div className="row">
             <button class="button" name="1" onClick={e => this.props.onClick(e.target.name)}>1</button>
@@ -40,7 +40,7 @@ render() {
             <button class="button" name="." onClick={e => this.props.onClick(e.target.name)}>.</button>
             <button class="button" name="0" onClick={e => this.props.onClick(e.target.name)}>0</button>
             <button class="operator" name="=" onClick={e => this.props.onClick(e.target.name)}>=</button>
-            <button class="operator" name="/" onClick={e => this.props.onClick(e.target.name)}>÷</button>
+            <button class="operator" name="-" onClick={e => this.props.onClick(e.target.name)}>-</button>
           </div>
         </div>
         );
